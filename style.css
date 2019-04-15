@@ -1,0 +1,67 @@
+@font-face {
+    src: url(Ubuntu);
+    font-family: myfont;
+   
+       }
+
+
+    * {
+    margin: 0;
+    padding: 0;
+    }
+        h2 {
+        
+        float: right;
+        font-family: 'Ubuntu', sans-serif;
+        padding-top: 20px;
+        padding-left: 10px;
+        color: beige;
+    }
+
+    h3 {
+        float: right;
+    }
+
+    body {
+        background-color: rgb(18, 17, 78);
+        
+    }
+
+    #header {
+        min-height: 60px;
+        border-bottom:2px solid beige;
+        
+    }
+
+    .logoz {
+        float: left;
+        width: 40px;
+        padding-left: 20px;
+        padding-top:10px;
+        padding-bottom: 10px;
+    }
+
+    .left {
+
+        float: left;
+
+    }
+
+    .mainmenu {
+        float:right;
+        padding-top: 20px; 
+    }
+
+    .menu {
+        display: inline;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding-right: 100px;
+        
+        color: beige;
+    }
+
+
+    .menu:hover {
+        color: brown;
+        font-size: 20px;
+    }
