@@ -54,7 +54,7 @@
     .mainmenu {
         float:right;
         padding-top: 20px; 
-        overflow: hidden;
+        
         background-color: transparent;
     }
 
@@ -65,8 +65,9 @@
         transition: all .5s;
         color: rgb(247, 247, 245);
         text-align: center;
-        font-weight: lighter;
         
+       
+        padding: 20px 40px; 
         
     }
 
@@ -77,6 +78,7 @@
         color: black;
         background-color: #ddd;
         transition: .5s;
+        
         
         
         
@@ -117,14 +119,28 @@
     }
 
 
-    p{
+ /*   p{
        z-index: 3;
-        position: absolute; /* Position the background text */
-        bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-        background: rgb(0, 0, 0); /* Fallback color */
-        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-        color: #f1f1f1; /* Grey text */
-        width: 100%; /* Full width */
-        padding: 20px; /* Some padding */
+        position: absolute; 
+        bottom: 0; 
+        background: rgb(0, 0, 0); 
+        background: rgba(0, 0, 0, 0.5); 
+        color: #f1f1f1; 
+        width: 100%; 
+        padding: 20px; 
+    } 
+    */
+
+    p.mats {
+        margin-left: 300px;
+        margin-right: 200px;
+        position: absolute;
+        bottom: 150px;
+        left: 330px;
+        z-index: 2;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: cadetblue;
+        font-weight: bold;
+
     }
 
