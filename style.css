@@ -47,12 +47,15 @@
     .left {
 
         float: left;
+        
 
     }
 
     .mainmenu {
         float:right;
         padding-top: 20px; 
+        overflow: hidden;
+        background-color: transparent;
     }
 
     .menu {
@@ -60,32 +63,68 @@
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         padding-right: 100px;
         transition: all .5s;
-        color: beige;
-        position: relative;
+        color: rgb(247, 247, 245);
+        text-align: center;
+        font-weight: lighter;
+        
+        
     }
 
-    .menu:after {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 0%;
-        content: '.';
-        color: transparent;
-        background: #aaa;
-        height: 1px;
-    }
+   
 
 
     .menu:hover {
-        color: brown;
+        color: black;
+        background-color: #ddd;
+        transition: .5s;
+        
         
         
     }
 
 
+    img.bck {
 
+        z-index: -1;
+        position: absolute;
+    }
+
+    img.keeper {
+        z-index: 2;
+        position: relative;
+        height: 250px;
+        width: 250px;
+        margin-left: 15cm;
+        margin-top: 1cm;
+        
+    }
     
+    h3{
+        text-emphasis: bold;
+        text-align: center;
+        margin-left: 400px;
+        margin-right: 500px;
+        margin-top: 50px;
+        font-size:50px;
+        font-family: monospace;
+    }
 
+
+    img.keeper:hover{
+        height: 300px;
+        width: 300px;
+        transition: .5s;
+    }
+
+
+    p{
+       z-index: 3;
+        position: absolute; /* Position the background text */
+        bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+        color: #f1f1f1; /* Grey text */
+        width: 100%; /* Full width */
+        padding: 20px; /* Some padding */
+    }
 
