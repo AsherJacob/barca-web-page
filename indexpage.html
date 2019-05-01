@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Players</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .mySlides {display:none;}
+    </style>
+</head>
+<body>
+              
+              <script>
+              var slideIndex = 1;
+              showDivs(slideIndex);
+              
+              function plusDivs(n) {
+                showDivs(slideIndex += n);
+              }
+              
+              function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";  
+                }
+                x[slideIndex-1].style.display = "block";  
+              }
+              </script>
+
+    <header id="header" style="position:fixed; width:100%; background-color: transparent;">
+            <ul class="mainmenu">
+                <li class="menu"><a href="#">HOME</a></li>
+                <li class="menu"><a href="#headin">PLAYERS</a></li>
+                <li class="menu"><a href="#">MATCHES</a></li>
+            </ul>
+            <div class=left>
+                   <a href="https://www.fcbarcelona.com/en/"><img class="logoz" src="logo.png" alt="bla" ></a> 
+                <h2 >
+                    FC BARCELONA FAN PAGE
+
+                </h2>
+            
+            </div>
+           
+    </header>
+    <div class="slideshow">
+            <img class="mySlides" src="slide1.png" style="width:100%">
+            <img class="mySlides" src="slide2.jpg" style="width:100%">
+            <img class="mySlides" src="slide3.jpg" style="width:100%">
+            <button class="m n left " onclick="plusDivs(-1)">&#10094;</button>
+            <button class="m n right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    
+      <!--  <img class="bck" src="blg.jpg " height="100%" width="100%" > -->  
+     
+    <h2 id="headin">PLAYERS</h2>
+
+    <br> <br>
+    <h3 class="Mats" > GOALKEEPER   MARC ANDRE TER STEGEN </h3>
+    
+    <br><br>
+     <img src="mats.png" alt="mats"  class="keeper" >
+     <br>
+     
+       
+     
+     <h3 class="Mats">RIGHT BACK - SERGI ROBERTO </h3>
+     <br>
+     <br>
+     <img class="keeper" src="roberto.png" alt="ds">
+
+     <h3 class="Mats">CENTER BACK - GERARD PIQUE </h3>
+     <br>
+     <br>
+     <img class="keeper" src="pique.png" alt="ds">
+
+     <h3 class="Mats">CENTER BACK - CLEMENT LENGLET </h3>
+     <br>
+     <br>
+     <img class="keeper" src="lenglet.png" alt="ds">
+
+     <h3 class="Mats">left BACK - jordi alba </h3>
+     <br>
+     <br>
+     <img class="keeper" src="alba.png" alt="ds"> 
+    
+  </body>
+</html>

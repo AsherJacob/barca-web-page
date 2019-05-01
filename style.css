@@ -9,6 +9,22 @@
     margin: 0;
     padding: 0;
     }
+    .m{white-space:normal;}
+    .n,
+    .left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+    .right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+    .slideshow{position:center;
+                max-width: 60%;
+                margin: auto;}
+    .show2{max-width:980px}
+    .slideshow:hover
+    html{
+        scroll-behavior: smooth;
+    }
+
+    mySlides{
+        margin-top: 50px;
+    }
         h2 {
         
         float: right;
@@ -28,12 +44,7 @@
     }
 
     #header {
-        min-height: 60px;
-        border-bottom:2px solid beige;
-        
-        
-        
-        
+        min-height: 60px;        
     }
 
     .logoz {
@@ -62,7 +73,7 @@
         display: inline;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         padding-right: 100px;
-        transition: all .5s;
+        transition: all .5s ;
         color: rgb(247, 247, 245);
         text-align: center;
         
@@ -94,9 +105,9 @@
     img.keeper {
         z-index: 2;
         position: relative;
-        height: 250px;
-        width: 250px;
-        margin-left: 15cm;
+        height: 350px;
+        /*width: 230px; */
+        margin-left: 14cm;
         margin-top: 1cm;
         
     }
@@ -109,12 +120,13 @@
         margin-top: 50px;
         font-size:50px;
         font-family: monospace;
+        text-transform: uppercase;
     }
 
 
     img.keeper:hover{
-        height: 300px;
-        width: 300px;
+        height: 400px;
+       /* width: 300px; */
         transition: .5s;
     }
 
@@ -144,3 +156,44 @@
 
     }
 
+    h3.Mats {
+        font-family:'Ubuntu';
+       color: rgb(231, 161, 9);
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    #first {
+        color: rgb(194, 27, 27);
+        background-color: black;
+        padding: 4px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: white;
+        
+    }
+
+    .menu:hover a{
+
+        color: black;
+        
+        transition: .5s;
+    }
+
+
+    #headin {
+        text-emphasis: bold;
+        text-align: center;
+        margin-left: 300px;
+        margin-right: 600px;
+        margin-top: 50px;
+        font-size:50px;
+        font-family: monospace;
+        text-transform: uppercase;
+
+    }
+
+    
